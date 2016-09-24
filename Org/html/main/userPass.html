@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/userPass.css" rel="stylesheet">
+    <title>账号密码</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="middle-org">
+            <div class="org-icon-wrap font16">
+                <span class="org-icon inline middle"></span>
+                <span class="middle">江苏子轩教育机构</span>
+                <span class="org-icon-shadow inline"></span>
+            </div>
+            <ul class="org font16">
+                <li class="org-item">
+                    <div class="org-item-content">
+                        <span>基本资料</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="org-item">
+                    <div class="org-item-content">
+                        <span>教学信息</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="org-item active">
+                    <div class="org-item-content">
+                        <span>账号密码</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="org-item">
+                    <div class="org-item-content">
+                        <span>意见反馈</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content-org-wrapper">
+            <div id="main-content">
+                <div class=" minoutre auto mt50">
+                    <p class="black font16">
+                        <span>账号密码</span>
+                    </p>
+                    <div class="mb10"></div>
+                    <div class="line"></div>
+                    <div class="content auto">
+                       <div class="item">
+                                <span class="iphone">
+                                    手机：
+                                     <span>18668689856</span>
+                                </span>
+                                 <span class="editiphone">修改手机</span>
+                                <br/>
+
+                                <span class="mlT46 password">
+                                    密码：
+                                    <span>＊＊＊＊＊＊</span>
+                                </span>
+                           <span class="editiphone">修改密码</span>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--修改手机的弹窗提示-->
+    <div class="mypopup num_iphone">
+        <h5 class="center font16 popuphead">
+            标题
+            <i class="popclose cursor"></i>
+        </h5>
+        <div class="popupbox">
+             <div class="font14 auto">
+                 <div class="item">
+                    <div class="mt30 inline">
+                            <div class="textright">手机：</div>
+                            <input class="input-small black input-wid190" placeholder="请输入您已绑定的手机号码" type="text"/>
+                            <p class="prompt"><span class="weight800">提示：</span><span class="iphonePrompt">手机号不存在！</span></p>
+                    </div>
+                     <div class="removemt201 inline">
+                        <div class="textright">验证码：</div>
+                        <input class="input-small black input-wid" placeholder="请输入验证码" type="text"/>
+                        <span class="submit input-wid">点击发送验证码</span>
+                        <p class="prompt"><span class="weight800">提示：</span><span class="checkPrompt">验证码输入有误！</span></p>
+                    </div>
+                 </div>
+                 <div class="handle">
+                     <span class="submit mt20">确定</span>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+    <!--修改旧密码的弹窗提示-->
+    <div class="mypopup old_password">
+        <h5 class="center font16 popuphead">
+            标题
+            <i class="popclose cursor"></i>
+        </h5>
+        <div class="popupbox">
+            <div class="font14 auto">
+                <div class="item">
+                    <div class="mt30 inline">
+                            <div class="textright">旧密码：</div>
+                            <input class="input-small black input-wid190" placeholder="请输入旧密码" type="text"/>
+                            <p class="prompt"><span class="weight800">提示：</span><span class="iphonePrompt">旧密码输入错误</span></p>
+                    </div>
+                    <br/>
+                    <div class="removemt201 inline">
+                        <div class="textright">新密码：</div>
+                        <input class="input-small black input-wid190" placeholder="请输入新密码" type="text"/>
+                        <p class="prompt"><span class="weight800">提示：</span><span class="newpassword">新密码不能为空</span></p>
+                    </div>
+                </div>
+                <div class="handle">
+                    <span class="submit mt20">确定</span>
+                </div>
+                <p class="bundleIphone">用绑定的手机改密码？ <span style="color: #cb441e;cursor:pointer;">go 》</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!--通过手机号修改密码弹窗提示-->
+    <div class="mypopup edit_byiphone">
+        <h5 class="center font16 popuphead">
+            标题
+            <i class="popclose cursor"></i>
+        </h5>
+        <div class="popupbox">
+            <div class="font14 auto">
+                <div class="item">
+                    <div class="mt30 inline">
+                            <div class="textright">手机：</div>
+                            <input class="input-small black input-wid190" placeholder="请输入您已绑定的手机号码" type="text"/>
+                            <p class="prompt"><span class="weight800">提示：</span><span class="iphonePrompt">手机号不存在！</span></p>
+                    </div>
+                    <br/>
+                    <div class="removemt201 inline" >
+                        <div class="textright">验证码：</div>
+                        <input class="input-small black input-wid" placeholder="请输入验证码" type="text"/>
+                        <span class="submit input-wid">点击发送验证码</span>
+                        <p class="prompt"><span class="weight800">提示：</span><span class="checkPrompt">验证码输入有误！</span></p>
+                    </div>
+                    <div class="removemt202 inline" style="position:relative;">
+                        <div class="textright">新密码输入：</div>
+                        <input class="input-small black" placeholder="请输入新密码" type="text" style="padding-right:25px;width:165px;"/>
+                        <img src="../../../bundle/img/iconfont_pass.png" alt="" style="position:absolute;right:8px;top:10px;">
+                        <p class="prompt"><span class="weight800">提示：</span><span class="newpass">新密码不能为空！</span></p>
+                    </div>
+                </div>
+                <div class="handle">
+                    <span class="submit mt20">确定</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--成功或失败的时候的提示-->
+    <div class="mypopup mynoTitle" >
+       <div class="popupbox">
+            <div class="title">
+                <span class="close_off"></span>
+            </div>
+           <p class="handle font14">修改手机号码失败，网络原因！</p>
+           <div class="handle">
+               <span class="submit mt20" style="background:#cb441e;">重新修改</span>
+           </div>
+       </div>
+    </div>
+
+
+    <script>
+        var el = document.getElementById("left-menu");
+        var org= document.getElementById("middle-org");
+        changeMenuHeight();
+        function changeMenuHeight(){
+            el.style.height = document.documentElement.clientHeight + 'px';
+            document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+            if (org) {
+                org.style.height = document.documentElement.clientHeight - 80 + 'px';
+            }
+        }
+
+    </script>
+    <script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+    <script src="../../../bundle/js/vendor.js"></script>
+    <script src="../../../bundle/js/common.js"></script>
+    <script src="../../../bundle/js/jquery.nicescroll.js"></script>
+    <script>
+        //若是没有提示的时候添加的class
+        $('.removemt201').addClass('mt201');
+        $('.removemt202').addClass('mt202');
+        //有提示的时候移出class移出
+        $('.removemt201').removeClass('mt201');
+        $('.removemt202').removeClass('mt202');
+        /* $(".org").niceScroll({
+         cursorcolor:"#CC0071",
+         cursoropacitymax:1,
+         touchbehavior:false,
+         cursorwidth:"5px",
+         cursorborder:"0",
+         cursorborderradius:"8px"
+         });*/
+        $("#endTime").niceScroll({
+            cursorcolor:"#CC0071",
+            cursoropacitymax:1,
+            touchbehavior:false,
+            cursorwidth:"5px",
+            cursorborder:"0",
+            cursorborderradius:"8px"
+        });
+        //todo 下拉的放到common.js里
+        $('.select-wrap').delegate('.select-name', 'click', function(){
+            $(this).addClass("down").siblings(".select-ul").slideDown();
+        });
+        //教务机构
+        $('#middle-org').delegate('.org-item-content', 'click', function(){
+            if (!$(this).parent().hasClass("active")) {
+                $("#middle-org").find(".org-item.active").removeClass("active").find(".department").slideUp();
+                $(this).parent().addClass("active").find(".department").slideDown();
+            } else {
+                $("#middle-org").find(".org-item.active").removeClass("active").find(".department").slideUp();
+            }
+        });
+    </script>
+</body>
+</html>

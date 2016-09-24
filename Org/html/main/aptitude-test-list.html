@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>学能类试题列表</title>
+    <link href="../../../bundle/css/common/base.css" type="text/css" rel="stylesheet" />
+    <link href="../../../bundle/css/aptitude-test-list.css" type="text/css" rel="stylesheet" >
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left head">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">知识测评</div>
+        </li>
+        <li>
+            <div class="student-manage">咨询管理</div>
+        </li>
+    </ul>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp|&nbsp</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <!--正文（main-content可修改宽度）-->
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="aptitude-box">
+                      <div class="aptitude-content font14">
+                          <div class="overflow mb40" >
+                              <div class="nav-name left">选择试卷：</div>
+                              <ul class="left choose-paper center">
+                                    <li  class="choose-on">
+                                        <img src="../../../bundle/img/computer.png" class="aptitude-img">
+                                        <p class="mt10">学习风格</p>
+                                    </li>
+                                    <li>
+                                        <img src="../../../bundle/img/multi.png" class="aptitude-img">
+                                        <p class="mt10">多元智能</p>
+                                    </li>
+                                    <li class="mr0" >
+                                        <img src="../../../bundle/img/head.png" class="aptitude-img">
+                                        <p class="mt10">非智力因素</p>
+                                    </li>
+                              </ul>
+                          </div>
+                          <div class="overflow mb40" >
+                              <div class="nav-name left">简介：</div>
+                              <div class="left introduction-text ">
+                                   <p>用于了解学生的学习风格，包括时间偏好类型、认知方式类型、交互环境类型等十个维度，进而培养学生良
+                                       好的学习风    格，同时为教师的个性化辅导提供重要依据。</p>
+                              </div>
+                          </div>
+                          <div class="overflow" >
+                              <div class="nav-name left">选测维度：</div>
+                              <div class="left difficult-level ">
+                                    <span class="level-on">时间偏好时间偏好</span>
+                                    <span class="level-name ">认知方式</span>
+                                    <span class="level-name">交互环境</span>
+                                    <span class="level-name">直觉感觉</span>
+                                    <span class="level-name">任务处理</span>
+                                    <span class="level-name">时间偏好时间偏好</span>
+                                    <span class="level-name">认知方式</span>
+                                    <span class="level-name">交互环境</span>
+                                    <span class="level-name">认知方式</span>
+                                    <span class="level-name">交互环境</span>
+                                    <span class="level-on">时间偏好时间偏好</span>
+                                    <span class="level-name ">认知方式</span>
+                                    <span class="level-name">交互环境</span>
+                                    <span class="level-name">直觉感觉</span>
+                                    <span class="level-name">任务处理</span>
+                                    <span class="level-name">时间偏好时间偏好</span>
+                                    <span class="level-name">认知方式</span>
+                                    <span class="level-name">交互环境</span>
+                                    <span class="level-name">认知方式</span>
+                                    <span class="level-name">交互环境</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="test-btn mt80 cursor">开始测试</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

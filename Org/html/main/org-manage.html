@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/org-manage.css" rel="stylesheet">
+    <title>组织管理</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="middle-org">
+            <div class="org-icon-wrap font16">
+                <span class="org-icon inline middle"></span>
+                <span class="middle">江苏子轩教育机构</span>
+                <span class="org-icon-shadow inline"></span>
+            </div>
+            <ul class="org font16">
+                <li class="org-item active">
+                    <div class="org-item-content">
+                        <span class="org-item-bg"></span>
+                        <span>北京校区</span>
+                    </div>
+                    <div class="line"></div>
+                    <ul class="department font14">
+                        <li class="department-item active">
+                            咨询部
+                            <span class="delete hidden middle right"></span>
+                        </li>
+                        <li class="department-item">
+                            北京校区数学教研
+                            <span class="delete hidden middle right"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="org-item">
+                    <div class="org-item-content">
+                        <span class="org-item-bg"></span>
+                        <span>上海校区</span>
+                    </div>
+                    <div class="line"></div>
+                    <ul class="department font14 hidden">
+                        <li class="department-item active">
+                            数学咨询部
+                            <span class="delete hidden middle right"></span>
+                        </li>
+                        <li class="department-item">
+                            物理调研组
+                            <span class="delete hidden middle right"></span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content-org-wrapper">
+            <div id="main-content">
+                <div class="mt40 clearFix">
+                    <div class="tab-wrap mb10 font16 left">
+                        <ul class="tab">
+                            <li class="total active">
+                                <span class="total-bg inline middle"></span>
+                                <span class="total-item inline middle ml5">全部员工</span>
+                            </li>
+                            <li class="teacher">
+                                <span class="teacher-bg inline middle"></span>
+                                <span class="teacher-item inline middle ml5">老师管理</span>
+                            </li>
+                            <li class="consultant">
+                                <span class="consultant-bg inline middle"></span>
+                                <span class="consultant-item inline middle ml5">咨询师管理</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btns font14 right">
+                        <span class="add-staff handle-btn">添加员工</span>
+                        <span class="add-department handle-btn">添加部门</span>
+                        <span class="renewal handle-btn">批量续费</span>
+                        <span class="add-number font12">
+                            <span class="add-number-bg middle"></span>
+                            <span class="middle" style="line-height: 13px;">可添加老师账号<i class="red"> 99 </i>个</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="list-wrap h50">
+                    <div class="font16 ml30 left black">全部员工列表</div>
+                    <div class="search-total right">
+                        <div class="inline">
+                            <input type="text" class="search-text hidden" placeholder="请输入搜索内容"><span class="cursor mr7 search "><i class="search-img"></i></span>
+                            <div class="inline">共计<i class="red"> 30 </i>名咨询师</div>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="all" class="middle ml20">
+                            </th>
+                            <th>姓名</th>
+                            <th>账号</th>
+                            <th>部门</th>
+                            <th>创建时间</th>
+                            <th>
+                                <div class="select-wrap">
+                                    <div class="select-name">到期时间</div>
+                                    <ul id="endTime" class="select-ul hidden">
+                                        <li class="active">下拉第一</li>
+                                        <li>下拉第二</li>
+                                        <li>下拉第三</li>
+                                        <li>下拉第四</li>
+                                        <li>下拉第五</li>
+                                        <li>下拉第六</li>
+                                        <li>下拉第七</li>
+                                        <li>下拉第八</li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="people" class="middle ml20"></td>
+                            <td>张晓东</td>
+                            <td>18210274959</td>
+                            <td>咨询一部门</td>
+                            <td>2016-9-1</td>
+                            <td>2019-9-1</td>
+                            <td>
+                                <span class="see-btn">查看</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="people" class="middle ml20"></td>
+                            <td>张三</td>
+                            <td>18210204139</td>
+                            <td>咨询一部门</td>
+                            <td>2016-8-1</td>
+                            <td>2019-8-1</td>
+                            <td>
+                                <span class="see-btn">查看</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--添加新员工弹框 start-->
+<div class="add-staff-pop popup hidden">
+    <h5 class="center font16 popuphead">
+        添加新员工
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt20">
+        <div class="pop-content mlr45">
+            <div class="mb20">
+                <span>姓名：</span>
+                <input class="input w256" type="text" placeholder="请输入员工姓名"/>
+            </div>
+            <div class="mb20">
+                <span>手机：</span>
+                <input class="input w256" type="text" placeholder="请输入手机号码"/>
+            </div>
+            <div>
+                <span class="inline top">职位：</span>
+                <div class="inline place-wrap">
+                    <ul class="place font12">
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            分校管理员
+                            <span class="place-bg right"></span>
+                        </li>
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            老师
+                            (<span class="red">可创建老师账号99个</span>)
+                            <span class="place-bg right"></span>
+                        </li>
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            学管主任
+                            <span class="place-bg right"></span>
+                        </li>
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            学管
+                            <span class="place-bg right"></span>
+                        </li>
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            咨询主任
+                            <span class="place-bg right"></span>
+                        </li>
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            咨询师
+                            <span class="place-bg right"></span>
+                        </li>
+                        <li class="place-item">
+                            <input class="middle mr5" type="checkbox" />
+                            区域经理
+                            (<span class="red">可创建咨询师账号99个</span>)
+                            <span class="place-bg right"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt20" >
+            <span style="margin-left:50px;">部门：</span>
+            <select class="select" name="area">
+                <option value="1">海淀区1</option>
+                <option value="2">海淀区2</option>
+                <option value="3">海淀区3</option>
+                <option value="4">海淀区4</option>
+                <option value="5">海淀区5</option>
+            </select>
+            <select class="select ml20" name="part">
+                <option value="1">教研部1</option>
+                <option value="2">教研部2</option>
+                <option value="3">教研部3</option>
+                <option value="4">教研部4</option>
+                <option value="5">教研部5</option>
+            </select>
+        </div>
+        <div class="tip">
+            <div class="error-tip">抱歉，您创建的老师账号已达上限，请联系我们购买！</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--添加新员工弹框 end-->
+<!--超管权限的弹框开始-->
+<div class="superLimit hidden">
+    <div>
+        <p style="color:#db6441;font-size:12px;line-height:21px;padding:5px 0">
+            <span style="font-weight:800;">超管权限：</span>学生情况、教学情况、查看学生、 查看班级、添加校区、添加员工、全部员工、 老师管理、咨询师管理、批量续费、禁用/启用账号、重置密码、编辑信息、区域管理、个人中心、系统配置 </p>
+    </div>
+</div>
+<!--超管权限的弹框结束-->
+<!--选择批次开始-->
+<div class="choose-time popup hidden">
+    <h5 class="center font16 popuphead" style="background:#db6441;width:360px;">
+        选择批次
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font12" style="width:360px;height:190px;">
+        <div class="pop-content auto" style="width:260px;">
+           <div class="choose-batch">
+               <ul class="batches mt10">
+                    <li class="batch">
+                        <input class="middle mr5" type="checkbox" />
+                        <span>剩余<i class="red">100</i>个老师账号，剩余时间<i class="red">365</i>天</span>
+                    </li>
+                    <li class="batch">
+                        <input class="middle mr5" type="checkbox" />
+                        <span>剩余<i class="red">10</i>个老师账号，剩余时间<i class="red">128</i>天</span>
+                    </li>
+                </ul>
+             </div>
+        </div>
+        <div class="tip">
+            <div class="error-tip" style="color:#db6441;margin-left:50px;">您咨询师账号剩余数量不足，请联系我们购买！</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">完成</span>
+        </div>
+    </div>
+</div>
+<!--选择批次结束-->
+<!--学科选择弹框 start-->
+<div class="choose-subject popup hidden">
+    <h5 class="center font16 popuphead">
+        学科选择
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font12">
+        <div class="pop-content mlr65">
+            <div>选择学科完成后不能再做更改，请仔细选择！</div>
+            <ul class="subject-wrap">
+                <li class="subject-item">
+                    <label>
+                        <input class="middle" type="checkbox" />奥数
+                    </label>
+                </li>
+                <li class="subject-item">
+                    <label>
+                        <input class="middle" type="checkbox" />数学
+                    </label>
+                </li>
+                <li class="subject-item">
+                    <label>
+                        <input class="middle" type="checkbox" />英语
+                    </label>
+                </li>
+                <li class="subject-item">
+                    <label>
+                        <input class="middle" type="checkbox" />物理
+                    </label>
+                </li>
+                <li class="subject-item">
+                    <label>
+                        <input class="middle" type="checkbox" />化学
+                    </label>
+                </li>
+            </ul>
+            <div class="mb20">
+                本次选择了<i class="red"> 5 </i>门课程，消耗了<i class="red"> 5 </i>个老师账号
+            </div>
+            <div class="choose-batch">
+                <div>选择批次</div>
+                <ul class="batches mt10">
+                    <li class="batch">
+                        <input class="middle mr5" type="checkbox" />
+                        <span>剩余<i class="red">100</i>个老师账号，剩余时间<i class="red">365</i>天</span>
+                    </li>
+                    <li class="batch">
+                        <input class="middle mr5" type="checkbox" />
+                        <span>剩余<i class="red">10</i>个老师账号，剩余时间<i class="red">128</i>天</span>
+                    </li>
+                </ul>
+                <ul class="batches mt10">
+                    <li class="batch">
+                        <input class="middle mr5" type="checkbox" />
+                        <span>剩余<i class="red">100</i>个老师账号，剩余时间<i class="red">365</i>天</span>
+                    </li>
+                    <li class="batch">
+                        <input class="middle mr5" type="checkbox" />
+                        <span>剩余<i class="red">10</i>个老师账号，剩余时间<i class="red">128</i>天</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tip">
+            <div class="error-tip">您老师账号剩余数量不足，请联系我们购买！</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">完成</span>
+        </div>
+    </div>
+</div>
+<!--学科选择 end-->
+<!--添加校区 start-->
+<div class="add-school popup hidden">
+    <h5 class="center font16 popuphead">
+        添加校区
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font12">
+        <div class="pop-content mlr65 center">
+            <div>校区名称：<input class="input" type="text" placeholder="请输入校区名称" /></div>
+        </div>
+        <div class="tip">
+            <div class="error-tip">该名称已被其他校区使用</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--添加校区 end-->
+<!--删除部门 start-->
+<div class="delete-department popup hidden">
+    <h5 class="center font16 popuphead">
+        删除部门
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font12">
+        <div class="pop-content mlr55">
+            <div>请先把该部门下员工移到其他部门!</div>
+            <div class="other-department">
+                <ul class="department-items font12">
+                    <li class="department-school">
+                       <label>
+                            <input class="mr5 middle" type="radio" name="department-item" />
+                            <span class="middle">海淀校区部</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="mr5 middle" type="radio" name="department-item" />
+                            <span class="middle">学管1部</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="mr5 middle" type="radio" name="department-item" />
+                            <span class="middle">海淀校区学管主部</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--删除部门 end-->
+<!--添加成功弹框 start-->
+<div class="add-success pop-up font14 hidden">
+    <span class="pop-close cursor"></span>
+    <div class="pop-content red center">
+        <div class="success-bg"></div>
+        <div class="mt10">添加成功</div>
+        <div class="mt20 align-left">账号：18862368686</div>
+        <div class="mt10 align-left">密码：000000</div>
+    </div>
+    <div class="handle">
+        <span class="ok">确定</span>
+    </div>
+</div>
+<!--添加成功弹框 end-->
+<!--账号续费弹框 start-->
+<div class="renew-account popup hidden">
+    <h5 class="center font16 popuphead">
+        账号续费
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 pb20">
+        <div class="pop-content mlr45 font12">
+            <ul class="teachers">
+                <li>
+                    王老师 (13898789586)
+                    <span class="teacher-bg ml20 middle"></span>
+                </li>
+                <li>
+                    李老师 (13898789586)
+                    <span class="teacher-bg ml20 middle"></span>
+                </li>
+            </ul>
+            <div class="mt10">选择批次</div>
+            <ul class="batches mt10">
+                <li class="batch">
+                    <input class="middle mr5" type="checkbox">
+                    <span>剩余<i class="red">100</i>个老师账号，剩余时间<i class="red">365</i>天</span>
+                </li>
+                <li class="batch">
+                    <input class="middle mr5" type="checkbox">
+                    <span>剩余<i class="red">10</i>个老师账号，剩余时间<i class="red">128</i>天</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tip mt10 mb10 ml45">
+            <div class="error-tip">您创建的老师账号已达上限，请联系我们购买！</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--账号续费弹框 end-->
+<!--账号详情 start-->
+<div class="account-detail popup">
+    <h5 class="center font16 popuphead">
+        账号详情
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt20">
+        <div class="pop-content mlr40">
+            <table class="account-detail-table">
+                <thead>
+                <tr>
+                    <th>批次</th>
+                    <th>类别</th>
+                    <th>数量</th>
+                    <th>剩余时间</th>
+                    <th>购买时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>学生账号</td>
+                    <td>300个</td>
+                    <td>180天</td>
+                    <td>2016-08-10</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="handle font14 auto mt20 pb20">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--账号详情 end-->
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

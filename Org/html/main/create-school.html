@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>创建校区</title>
+    <link href="../../../bundle/css/common/base.css" type="text/css" rel="stylesheet" />
+    <link href="../../../bundle/css/create-school.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+<div class="w1000 auto">
+    <p class="center font24 head black mt70">创建校区</p>
+    <img src="../../../bundle/img/school.png" class="block auto mt70 mb50" />
+    <div class="operateBox"></div>
+     <div class="overflow">
+        <input  class="input auto mr7  ml268 pl15 schname" placeholder="请输入校区名称"/><button type="button" class="smlbtn auto font14 black bgwhite add cursor">添加</button>
+        <p class="ml268 font14 siliver line35" >一个校区不够？可以点击添加新的校区。</p>
+    </div>
+    <em class="ml268 normal orange font12 redborder hidden"><b>提示：</b>该名称已被占用</em>
+    <div class="handle">
+        <button class="submit bigbtn block auto mt40 cursor">完成</button>
+    </div>
+</div>
+<script type="text/javascript" src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+      $(function(){
+          $(".add").click(function(){
+              var box=$('<div class="operatebox"><input  class="input auto mr7 mb15  ml268 pl15 addshlname" placeholder="请输入校区名称"><button type="button" class="smlbtn bg-red auto font14 white cursor dele">删除</button></div>');
+              var operateBox= $(".operateBox");
+              var operateboxs=box.clone(true);
+              operateBox.append(operateboxs);
+              var text=$(".schname").val();
+              operateBox.find("input").last().val(text);
+              var len=operateBox.find("input").length;
+              var operatebox=$(".operateBox .operatebox");
+              $.map(operatebox,function(item,index){
+                  $(item).find(".dele").click(function(){
+                      $(item).remove();
+                  })
+              })
+          });
+      })
+ </script>
+</body>
+</html>

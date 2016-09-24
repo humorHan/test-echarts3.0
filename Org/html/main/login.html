@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/login.css" rel="stylesheet">
+    <title>登录</title>
+</head>
+<body>
+<div class="pop-mask"></div>
+<div class="chrome font12 center">
+    温馨提示：为了给您提供最极致的体验，推荐使用chrome（谷歌）浏览器！
+    <span class="download">立即下载</span>
+    <span class="close"></span>
+</div>
+<div class="login-head">
+    <img src="../../../bundle/img/logo.png" class="logo left">
+
+    <div class="login-head-right right font14">
+        <span class="telephone inline"></span>
+
+        <div class="inline ml5r20">
+            <div class="font24 phone-color">400-629-8220</div>
+            <div class="phone-color font14">
+                <span class="week mr10">周一至周日</span>
+                <span class="time phone-color">8:00 - 18:00</span>
+            </div>
+        </div>
+        <span class="login-btn inline">登录</span>
+    </div>
+</div>
+<div class="banner-wrap">
+    <div class="banner">
+        <img class="banner-width" src="../../../bundle/img/banner1.png">
+        <div class="WeChat-collect">
+            <div class="collect-btn"></div>
+            <div class="WeChat-btn active">
+            </div>
+
+            <div class="WeChat-wrapper">
+                <div class="WeChat-dashed">
+                    <div class="WeChat left"></div>
+                    <div class="describe left">
+                        <div class="scan font16">微信扫描二维码关注我们</div>
+                        <div class="font14">
+                            <div class="line24">
+                                一键绑定，家校互联！<br/>
+                                老师教学进度，实时反馈！<br/>
+                                学生作业、弱项分析，统统掌握!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copy-right">
+    <div>联系电话：400-629-8200（周一至周日 8:00-18:00） | 地址：北京市海淀区上地三街信息路科实大厦C座303</div>
+    <div class="mt15">©2016 北京云学时代科技有限公司（魔方格） 京ICP备13038147号-1</div>
+</div>
+<!--登录弹框 start-->
+<div class="login-pop">
+    <div class="login-pop-left left"></div>
+    <div class="login-pop-right">
+        <div class="font24 red center pt70 mb20">登录</div>
+        <div class="login-info font14">
+            <div class="login-number">
+                <span class="login-number-bg left"></span>
+                <input class="font14 w190" type="text" placeholder="请输入手机号或账号"/>
+            </div>
+            <div class="password mt10">
+                <span class="password-bg left"></span>
+                <input class="w190 font14" type="text" placeholder="请输入密码"/>
+            </div>
+            <div class="identify-code mt10">
+                <input class="middle pl20 font14" type="text" placeholder="请输入验证码"/>
+                <img src="" alt="" class="identify-img middle">
+            </div>
+            <div class="login-pop-tip">
+                <div class="error-tip">提示：验证码输入有误!</div>
+            </div>
+            <div class="pop-login-btn font18 center">马上登录</div>
+            <div class="login-handle">
+                <label class="black3">
+                    <input type="checkbox" class="middle font14">
+                    下次自动登录
+                </label>
+                <span class="right cursor">忘记密码</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--登录弹框 end-->
+<!--找回密码弹框 start-->
+<div class="find-password popup hidden">
+    <h5 class="center font16 popuphead">
+        找回密码
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font14">
+        <div class="pop-content">
+            <div class="phone mb10">
+                手机：
+                <input class="input w188" type="text" placeholder="请输入您已绑定的手机号码"/>
+            </div>
+            <div class="phone-tip align-left">
+                <div class="error-tip w154">提示：手机号不存在</div>
+            </div>
+            <div class="code mtb10">
+                验证码：
+                <input class="input middle" type="text" placeholder="请输入验证码"/>
+                <span class="send-code-btn middle">点击发送验证码</span>
+            </div>
+            <div class="code-tip align-left">
+                <div class="error-tip w154">提示：手机号不存在</div>
+            </div>
+            <div class="phone mtb10">
+                新密码：
+                <input class="input w188" type="text" placeholder="请输入新密码"/>
+            </div>
+            <div class="code-tip align-left">
+                <div class="error-tip w154">提示：新密码不能为空</div>
+            </div>
+        </div>
+        <div class="handle font14 auto mt20">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--找回密码弹框 end-->
+<!--收藏提示 start-->
+<div class="collection popup hidden">
+    <h5 class="center font16 popuphead">
+        收藏提示
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font14">
+        <div class="pop-content">
+            <div class="mb15">网址名称：魔方格机构版</div>
+            <div class="mb15">网址：http://e.mofangge.com</div>
+            <div class="mb20">确定添加收藏？</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--收藏提示 end-->
+<!--加入收藏失败 start-->
+<div class="collection-fail pop-up font14 hidden">
+    <span class="pop-close cursor"></span>
+    <div class="pop-content">
+        <div class="mb5">加入收藏失败</div>
+        <div class="mb20">请使用Ctrl + D进行添加</div>
+    </div>
+    <div class="handle">
+        <span class="ok">关闭</span>
+    </div>
+</div>
+<!--加入收藏失败 end-->
+<!--绑定手机失败 start-->
+<div class="bind-phone-fail popup hidden">
+    <h5 class="center font16 popuphead">
+        绑定手机
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font14">
+        <div class="pop-content">
+            <div>抱歉！手机绑定失败！</div>
+            <div class="error-tip">原因：网络异常</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">重新绑定手机</span>
+        </div>
+    </div>
+</div>
+<!--绑定手机失败 end-->
+<!--找回密码失败 start-->
+<div class="find-password-fail popup hidden">
+    <h5 class="center font16 popuphead">
+        找回密码
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30 font14">
+        <div class="pop-content">
+            <div>抱歉！找回密码失败！</div>
+            <div class="error-tip">原因：网络异常</div>
+        </div>
+        <div class="handle font14 auto">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--找回密码失败 end-->
+<script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>填写学生信息</title>
+    <link href="../../../bundle/css/common/base.css" type="text/css" rel="stylesheet" />
+    <link href="../../../bundle/css/fill-stu-news.css" type="text/css" rel="stylesheet" >
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left head">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">知识测评</div>
+        </li>
+        <li>
+            <div class="student-manage">咨询管理</div>
+        </li>
+    </ul>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp|&nbsp</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <!--正文（main-content可修改宽度）-->
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+               <div class="fillstu-news-box font14">
+                    <p class="mt90">亲爱的同学：早上好！<i class="sun-icon"></i></p>
+                    <p class="mt50">古人云：“一日之计在于晨，一年之计在于春”，快来开启你的学习之旅吧～</p>
+                    <div class="line mt60"></div>
+                    <ul class="mt60 news-box mb68 overflow">
+                        <li>
+                            <span>姓名</span><input type="text" class="name-input">
+                            <div class="error-box">您输入的信息有误！</div>
+                        </li>
+                        <li>
+                            <span class="mr10">性别</span>
+                            <label>
+                                <input type="radio"   name="sex" class="mr20"><span class="mr40">男</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="sex"  class="mr20"><span>女</span>
+                            </label>
+                        </li>
+                        <li>
+                            <span>年龄</span><input type="text" class="name-input">
+                            <div class="error-box">您输入的信息有误！</div>
+                        </li>
+                    </ul>
+                    <ul class="mt60 news-box overflow">
+                       <li>
+                           <span>电话</span><!--
+                           --><input type="text" class="phone-input">
+                           <div class="error-box">您输入的信息有误！</div>
+                       </li>
+                       <li>
+                           <span class="">学校</span><!--
+                           --><input type="text" class="phone-input">
+                           <div class="error-box">您输入的信息有误！</div>
+                       </li>
+                    </ul>
+                   <ul class="mt60 email-box mb68 overflow">
+                       <li>
+                           <span>邮箱</span><!--
+                           --><input type="text" class="email-input">
+                           <div class="error-box">您输入的信息有误！</div>
+                       </li>
+                       <li>
+                           <span>住址</span><!--
+                           --><input type="text" class="email-input">
+                           <div class="error-box">您输入的信息有误！</div>
+                       </li>
+                   </ul>
+                   <div class="handle overflow">
+                       <button class="submit mr40">下一步</button>
+                        <span class="clear-box">清空信息</span>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

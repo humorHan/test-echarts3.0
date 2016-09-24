@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/filterTest.css" rel="stylesheet">
+    <title>试题筛选</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">知识测评</div>
+        </li>
+        <li>
+            <div class="student-manage">咨询管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div class="auto" style="width:1180px;">
+                <div id="main-contentt">
+                    <div class="crumb mt40"></div>
+                    <div class="kuang-kuang">
+                        <ul class="filter-title">
+                            <li>范围:</li>
+                            <li class="active">公共题库</li>
+                            <li>我收藏的试题</li>
+                        </ul>
+                    </div>
+                    <!--侧面树开始的部分-->
+                    <div class="leftTree mt20">
+                        <dl class="mt20">
+                            <dt class="on_open click">整数与负数</dt>
+                            <div class="second_tree mt10">
+                                <dd class="clickTree">整数与负数</dd>
+                                <dd >负数与整数</dd>
+                                <dd>整数与负数</dd>
+                                <dd>负数与整数</dd>
+                            </div>
+                        </dl>
+                        <dl>
+                            <dt class="on_close">有理数</dt>
+                            <div class="second_tree mt10">
+                                <dd>有理数的一</dd>
+                                <dd>有理数的二</dd>
+                            </div>
+                        </dl>
+                        <dl>
+                            <dt class="on_close">有理数的加减法</dt>
+                            <div class="second_tree mt10">
+                                <dd>加法一</dd>
+                                <dd>加法二</dd>
+                            </div>
+                        </dl>
+                        <dl>
+                            <dt class="on_close">一元一次方程</dt>
+                            <div>
+
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!--侧面树结束的部分-->
+                    <!--右面展示区开始的部分-->
+                    <div class="rightContent mt20">
+                        <ul class="mt20 diff_ul">
+                            <li>难度：</li>
+                            <li class="active">全部</li>
+                            <li>容易</li>
+                            <li>较易</li>
+                            <li>中档</li>
+                            <li>较难</li>
+                            <li>困难</li>
+                        </ul>
+                        <ul class="mt20 depross">
+                            <li class="active clickjs0">默认排序</li>
+                            <li class="clickjs1">组卷次数<span class="readyTimes"></span>
+                            </li>
+                            <li style="border:none" class="clickjs2">由难到易<span class="easyTodif"></span>
+                            </li>
+                            <li>共计 <span class="active">1200</span> 道试题</li>
+                        </ul>
+                        <!--题目和解析部分-->
+                        <div class="test_outer">
+                            <div class="ml40 mt20 contentdiv">
+                                <div class="wrongPosition">
+                                    <span class="wrongspan hiddened">纠错</span>
+                                </div>
+                                <p class="content">
+                                    蜗牛从某点O开始沿东西方向直线爬行，规定向东牌型的路程记作为正数，向西爬行的路程记作为负数，爬行的路程依次为（单位：cm）：+蜗牛从某点O开始沿东西方向直线爬行，规定向东牌型的路程记作为正数，向西爬行的路程记作为负数，爬行的路程依次为（单位：cm）：+</p>
+                            </div>
+                            <ul class="process_dif">
+                                <li>[难度：<span>偏难</span>]</li>
+                                <li>组卷：&nbsp;<span class="active">25</span>&nbsp;次</li>
+                                <li style="float:right" class="mr20">
+                                    <span class="addto_basket"></span>
+                                    <span class="middle mr20">加入试题蓝</span>
+                                    <span class="collection"></span>
+                                    <span class="middle">收藏试题</span>
+                                </li>
+                            </ul>
+                            <div class="analy ml40">
+                                <p class="analy_p">
+                                    <span class="analy_title">解析：</span>
+                                    第三只小猫 试题分析：根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。 解：根据分析可知第三条线
+                                </p>
+                            </div>
+                        </div>
+                        <div class="test_outer">
+                            <div class="ml40 mt20 contentdiv">
+                                <div class="wrongPosition">
+                                    <span class="wrongspan hiddened">纠错</span>
+                                </div>
+                                <p class="content">
+                                    蜗牛从某点O开始沿东西方向直线爬行，规定向东牌型的路程记作为正数，向西爬行的路程记作为负数，爬行的路程依次为（单位：cm）：+蜗牛从某点O开始沿东西方向直线爬行，规定向东牌型的路程记作为正数，向西爬行的路程记作为负数，爬行的路程依次为（单位：cm）：+</p>
+                            </div>
+                            <ul class="process_dif">
+                                <li>[难度：<span>偏难</span>]</li>
+                                <li>组卷：&nbsp;<span class="active">25</span>&nbsp;次</li>
+                                <li style="float:right" class="mr20">
+                                    <span class="click_addTobasket"></span>
+                                    <span class="middle mr20 noClick">加入试题蓝</span>
+                                    <span class="click_collection"></span>
+                                    <span class="middle noClick">收藏试题</span>
+                                </li>
+                            </ul>
+                            <div class="analy ml40">
+                                <p class="analy_p">
+                                    <span class="analy_title">解析：</span>
+                                    第三只小猫 试题分析：根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。 解：根据分析可知第三条线
+                                </p>
+                            </div>
+                        </div>
+                        <!--右面展示区结束的部分-->
+                    </div>
+                </div>
+                <!--最右面-->
+                <div class="rightest">
+                    <div class="position_fixed">
+                        <div class="already_filter filterAfter">
+                            <span>完 成 筛 选</span>
+                            <span class="mun_span">900</span>
+                        </div>
+                        <div class="already_testType alreadyAfter">
+                            <span>已 选 题 型</span>
+
+                            <div class="need_show">
+                                <ul>
+                                    <li><span class="chines">选择题</span><span>56</span><span><img
+                                            src="../../../bundle/img/delete.png" alt=""></span></li>
+                                    <li><span class="chines">选择题</span><span>56</span><span><img
+                                            src="../../../bundle/img/delete.png" alt=""></span></li>
+                                    <li><span class="chines">选择题</span><span>56</span><span><img
+                                            src="../../../bundle/img/delete.png" alt=""></span></li>
+                                 </ul>
+                                <div class="handle">
+                                    <span class="preSee submit">预览</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goto_top gotoAfter"><span>返 回 顶 部</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--保存测评试卷开始-->
+    <div class="mypopup save_testPaper hidden">
+        <h5 class="center font16 popuphead">
+            保存测评试卷
+            <i class="popclose cursor"></i>
+        </h5>
+
+        <div class="popupbox">
+            <div class="mt15 inline">
+                <span class="first_span">试卷名称：</span>
+                <input type="text" placeholder="第一套试卷" class="input">
+            </div>
+            <div class="mt15">
+                <span class="first_span">总课时：</span>
+                <span>1</span>
+            </div>
+            <div class="mt15">
+                <span class="first_span">详细课时：</span>
+                <ul>
+                    <li>
+                        <span>冠词 &nbsp;</span>
+                           <span class="word_the">
+                               <input type="text" class="input myInput" placeholder="42">
+                               <span class="mutilp"></span>
+                               <span class="add"></span>
+                           </span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="handle mt15">
+                <span class="submit sure">确定</span>
+                <span class="submit cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <!--保存测评试卷结束-->
+
+
+    <!--试卷预览开始-->
+    <div class="mypopup paper_see hidden">
+        <h5 class="center font16 popuphead">
+            试卷预览
+            <i class="popclose cursor"></i>
+        </h5>
+
+        <div class="popupbox">
+            <h4 class="handle font16">2016年9月份试卷</h4>
+            <h5 class="font14">一、词汇</h5>
+
+            <div>
+                <p class="ml20 mt15"><span>1.</span> My brother and IChinatown inMy brother and IChinatown inMy brother
+                    and IChinatown inMy brother and IChinatown inMy brother and IChinatown inMy brother and IChinatown
+                    inMy brother and IChinatown inMy brother and IChinatown inMy brother and IChinatown inMy brother and
+                    IChinatown inMy brother and IChinatown inMy brother and IChinatown inMy brother and IChinatown inMy
+                    brother and IChinatown inMy brother and IChinatown inMy brother and IChinatown in</p>
+
+                <p class="ml20 mt15">
+                    这部分是提供的选项
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--试卷预览结束-->
+
+    <!--纠错的弹框开始-->
+    <div class="mypopup find_wrong hidden">
+        <h5 class="center font16 popuphead">
+            纠错
+            <i class="popclose cursor"></i>
+        </h5>
+
+        <div class="popupbox">
+            <p>亲，您好：</p>
+            <p>如发现试题中存在任何错误，请及时纠错告知我们，谢谢您的支持！</p>
+            <hr class="mt10">
+            <p class="text_indent mt10">标题：<span class="ml5">试题－4588126</span></p>
+            <p class="mt10 bigimg">问题类型：<input type="text" class="input ml5" placeholder="题文不完整或有错别字和标点符号"><span class="span"></span></p>
+            <p class="mt20">问题描述：<textarea class="ml5 input"></textarea></p>
+            <div class="handle mt15">
+                <span class="submit">确定</span>
+            </div>
+        </div>
+    </div>
+    <!--纠错的弹框结束-->
+</div>
+    <script>
+        var el = document.getElementById("left-menu");
+        var org = document.getElementById("middle-org");
+        changeMenuHeight();
+        function changeMenuHeight() {
+            el.style.height = document.documentElement.clientHeight + 'px';
+            document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+            if (org) {
+                org.style.height = document.documentElement.clientHeight - 80 + 'px';
+            }
+        }
+    </script>
+    <script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+    <script src="../../../bundle/js/vendor.js"></script>
+    <script src="../../../bundle/js/common.js"></script>
+    <script>
+        $('dt').click(function(){
+            $(this).next().toggle();
+         })
+        /*难易程度点击时候的js*/
+        var num=0;
+        $('.clickjs1').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            $(this).children().removeClass('readyTimes');
+            $(this).next().children().removeClass('clickState2');
+            $(this).next().children().removeClass('clickState1').addClass('easyTodif');
+            if(num%2==0){
+                $(this).children().removeClass('clickState1');
+                $(this).children().addClass('clickState2');
+            }else{
+                $(this).children().removeClass('clickState2');
+                $(this).children().addClass('clickState1');
+            }
+            num++;
+        });
+        var cont=0;
+        $('.clickjs2').click(function(){
+            $(this).children().removeClass('easyTodif');
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.clickjs1').children().removeClass('clickState2');
+            $('.clickjs1').children().removeClass('clickState1').addClass('readyTimes');
+            if(cont%2==0){
+                $(this).children().removeClass('clickState2');
+                $(this).children().addClass('clickState1');
+            }else{
+                $(this).children().removeClass('clickState1');
+                $(this).children().addClass('clickState2');
+            }
+            cont++;
+        });
+        $('.clickjs0').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+        $('.clickjs0').click(function(){
+            $('.clickjs1').children().removeClass('clickState2').removeClass('clickState1').addClass('readyTimes');
+            $('.clickjs2').children().removeClass('clickState2').removeClass('clickState1').addClass('easyTodif');
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+    </script>
+</body>
+</html>

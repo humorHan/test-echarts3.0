@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>系统设置-机构管理设置</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" type="text/css" rel="stylesheet" />
+    <link href="../../../bundle/css/systemset-personality.css" type="text/css" rel="stylesheet" >
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left classDetail">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp|&nbsp</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <!--正文（main-content可修改宽度）-->
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="main-content">
+                    <p class="font16 black">
+                        系统设置
+                    </p>
+                    <div class="overflow mb10 font16 minus-mt20">
+                        <div class=" right cursor">
+                            <i class="persernality-img"></i>
+                            <span class="title-nav">机构管理设置</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="institution-img-on"></i>
+                            <span class="title-nav title-nav-on">个性化设置</span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="content auto">
+                        <p class="overflow mt30 font12 outtime">
+                            <span class="right">
+                                <i class="outtime-icon"></i>到期时间：2017－08－06
+                            </span>
+                        </p>
+                        <ul class="contentnews auto overflow font16">
+                            <li class="overflow mb50" >
+                                <span class="left-header-name">上传logo：</span>
+                                <dl class="right-content">
+                                    <div class="upload-box left">
+                                        <i class="dele-img"></i>
+                                        <img src="../../../bundle/img/logo.png">
+                                    </div>
+                                    <div class="alert-box left  ml30 mt13" >
+                                        <p class="alert-error mb10 "><b>提示： 上传失败！</b> 您上传的图片过大！</p>
+                                        <p class="alert-error mb10  hidden"><b>提示： 上传失败！</b> 您上传的图片尺寸不符合要求！</p>
+                                        <p class="alert-error mb10 hidden"><b>提示： 上传失败！</b> 您上传的图片格式不正确！</p>
+                                        <p class="font12 alert-color">请选择jpg、png格式,尺寸不大于650*70px,小于1M的图片。</p>
+                                    </div>
+                                </dl>
+                            </li>
+                            <li class="overflow mb50">
+                                <span class="left-header-name">上传轮播图：</span>
+                                <div class="right-content center font14">
+                                    <div class="shuf-box left">
+                                        <i class="dele-img"></i>
+                                        <div class="shuf-content mb10" style="border-color: #cb441e">
+                                            <img src="../../../bundle/img/logo.png">
+                                        </div>
+                                        <span>轮播图1</span>
+                                    </div>
+                                    <div class="shuf-box left">
+                                        <i class="dele-img hidden"></i>
+                                        <div class="shuf-content mb10">
+                                            <img src="../../../bundle/img/upload.png" class="cursor">
+                                        </div>
+                                        <span>轮播图2</span>
+                                    </div>
+                                    <div class="shuf-box left mr0">
+                                        <i class="dele-img hidden"></i>
+                                        <div class="shuf-content mb10">
+                                            <img src="../../../bundle/img/upload.png" class="cursor">
+                                        </div>
+                                        <span>轮播图3</span>
+                                    </div>
+                                    <div class="alert-box left  mt50 ml30" >
+                                        <p class="alert-error mb10 "><b>提示： 上传失败！</b> 您上传的图片尺寸不符合要求！</p>
+                                        <p class="font12 alert-color">请选择jpg、png格式,尺寸不大于650*70px,小于1M的图片。</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="overflow mb50">
+                                <span class="left-header-name">联系电话：</span>
+                                <div class="right-content">
+                                    <input type="text" class="phone-input" placeholder="请输入联系电话">
+                                </div>
+                                <div class="alert-box left mt3 ml30" >
+                                    <p class="alert-error mb10 "><b>提示： </b>输入信息有误！</p>
+                                </div>
+                            </li>
+                            <li class="overflow mb50">
+                                <span class="left-header-name">公司地址：</span>
+                                <div class="right-content">
+                                    <input type="text" class="address-input" placeholder="请输入公司地址">
+                                </div>
+                                <div class="alert-box left mt3 ml30" >
+                                    <p class="alert-error mb10 "><b>提示： </b>输入信息有误！</p>
+                                </div>
+                            </li>
+                            <li class="overflow mb93">
+                                <span class="left-header-name">工作时间：</span>
+                                <div class="right-content font16">
+                                    <select class="select mr10">
+                                        <option>周一</option>
+                                        <option>周一</option>
+                                    </select>
+                                    <span class="line-middle mr10"></span>
+                                    <select class="select mr40">
+                                        <option>周日</option>
+                                        <option>周日</option>
+                                    </select>
+                                    AM
+                                    <select class="select mr10">
+                                        <option>8:00</option>
+                                        <option>8:00</option>
+                                    </select>
+                                    <span class="line-middle mr10"></span>
+                                    PM
+                                    <select class="select">
+                                        <option>8:00</option>
+                                        <option>8:00</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="handle">
+                            <button class="save  mr83">保存</button><button class="before-look ">预览</button>
+                        </div>
+                       <!-- 弹框开始-->
+                        <div class="pop-up font14 hidden">
+                            <span class="pop-close cursor mb15"></span>
+                            <div class="pop-content black ">
+                                <p class="line25 ">您确定要删除所有轮播图，将恢复 系统自带的轮播图！</p>
+                            </div>
+                            <div class="handle mt20">
+                                <span class="ok">确定</span>
+                            </div>
+                        </div>
+                        <!-- 弹框结束-->
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+<script>
+    $(function(){
+        $(".edit").click(function(){
+            $(".classname").prop("contenteditable",true)
+        });
+        //删除校区
+        var dele=$(".deletesch");
+        var schname=$(".schname");
+        $.map(schname,function(item,index){
+            dele.eq(index).click(function(){
+                $(item).remove();
+            })
+        })
+    })
+</script>
+</body>
+</html>

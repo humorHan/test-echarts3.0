@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/teach-records.css" rel="stylesheet">
+    <title>学生情况-教学监管-教学记录</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="middle-org">
+            <div class="org-icon-wrap font16">
+                <span class="org-icon inline middle"></span>
+                <span class="middle">江苏子轩教育机构</span>
+                <span class="org-icon-shadow inline"></span>
+            </div>
+            <ul class="org font16">
+                <li class="org-item active">
+                    <div class="org-item-content ">
+                        <span>学生情况</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="org-item">
+                    <div class="org-item-content">
+                        <span>教学情况</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content-org-wrapper">
+            <div id="main-content">
+                <div class="paper-box">
+                    <p class="font16 black">
+                        李华的学习轨迹
+                    </p>
+                    <div class="overflow mb40 font16 minus-mt20">
+                        <div class=" right cursor ">
+                            <i class="analy-icon"></i>
+                            <span class="title-nav ">掌握分析</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="wrong-icon"></i>
+                            <span class="title-nav">错题本</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="homework-icon"></i>
+                            <span class="title-nav ">作业情况</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="knowledge-icon"></i>
+                            <span class="title-nav ">知识测评</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="teach-icon-on"></i>
+                            <span class="title-nav title-nav-on">教学记录</span>
+                        </div>
+                    </div>
+                    <!--标题开始-->
+                    <div class="font16 mb25 overflow">
+                        学科：
+                        <select class="sele mr30">
+                            <option>初中数学</option>
+                            <option>初中数学</option>
+                        </select><!--
+                        --><select class="sele mr30">
+                            <option>第一阶段</option>
+                            <option>第一阶段</option>
+                        </select>
+                        <span>
+                          教学时间：2016－06－01—2016－12－03
+                        </span>
+                        <span class="font12 right">
+                            共计<i class="red">10</i>份教案
+                        </span>
+                    </div>
+                    <div class="font16 mb25 overflow">
+                        <span>教学周期：<i class="red normal">1</i>/<i class="normal">100</i>课次</span>
+                        <i class="red mr20 ml20"> > </i>
+                        <span>第<i class="red class-num ml10 mr10">1</i>课次</span>
+                        <button class="serch ml20">查询</button>
+                    </div>
+                    <!--标题结束-->
+                    <!--教学记录内容开始-->
+                    <div class=" line50  headbg pl20 pr20 black font16">
+                        <span class="font18">动若癫痫，静若瘫痪</span>
+                        <div class="inline ml50">
+                            科目：<span class="sub-name">初中数学</span>
+                        </div>
+                        <div class="inline ml50">
+                           授课老师：<span class="sub-name">张思老师</span>
+                        </div>
+                    </div>
+                    <ul class="teach-content">
+                        <li class="teach-content-box">
+                            <h5 class="nav-head mb20"><i class="class-icon mr10"></i>课堂引入</h5>
+                            <div class="font14 nav-box">
+                                <p class="line25">老师可以根据教学实际需求，记录本节课引入课堂的内容，比如课前回顾、故事引入等</p>
+                            </div>
+                        </li>
+                        <li class="teach-content-box">
+                            <h5 class="nav-head mb20"><i class="goal-icon mr10"></i>教学目标</h5>
+                            <div class="font14 nav-box">
+                                1、理解分数乘法的意义，掌握分数与整数相乘、分数与分数相乘的计算法则，能正确计算分数乘法。<br>
+                                2、通过观察比较，能归纳、总结出分数乘法的计算法则，理解分数乘法的算理。<br>
+                                3、通过知识间联系，培养迁移、观察、分析、概括的能力。
+                            </div>
+                        </li>
+                        <li class="teach-content-box">
+                            <h5 class="nav-head mb20"><i class="diff-icon mr10"></i>重难点分析</h5>
+                            <div class="font14 nav-box">
+                                1、重点：<br>
+                                2、难点：<br>
+                                3、重难点：
+                            </div>
+                        </li>
+                        <li class="teach-content-box">
+                            <h5 class="nav-head mb20"><i class="process-icon mr10"></i>教学过程</h5>
+                            <ul class="font14 nav-box">
+                                <li>
+                                    知识点一，三角函数的知识点一
+                                    <div class="mt20 mb20 pl15">
+                                        <div class="mb20">
+                                            1：三角函数的公式熟练<br>
+                                            2：三角函数的公式熟练<br>
+                                            3：三角函数的公式熟练
+                                        </div>
+                                        <p class="mt20 mb20">考法1：三角函数的公式熟练</p>
+                                        <div class="mb20 overflow">
+                                            <span class="sift-test "> 精选例题</span>
+                                            <div class="align-left mb20" >
+                                                <p class="line40">
+                                                    例题1
+                                                </p>
+                                                <div >
+                                                    丽给小明出了一道计算题：若（-3）x•（-3）2 •（-3）3 =（-3）7，求x的值，小明的答案是-2，小亮的A : 2     B : 3 C : 4     D : 5
+                                                </div>
+                                            </div>
+                                            <span class="sift-test "> 随堂练习</span>
+                                            <div class="align-left">
+                                                <p class="line40">
+                                                    练习1
+                                                </p>
+                                                <div>
+                                                    丽给小明出了一道计算题：若（-3）x•（-3）2 •（-3）3 =（-3）7，求x的值，小明的答案是-2，小亮的A : 2     B : 3 C : 4     D : 5
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mt20 mb20">考法2：三角函数的公式熟练</p>
+                                        <div class="mb20 overflow">
+                                            <span class="sift-test "> 精选例题</span>
+                                            <div class="align-left mb20" >
+                                                <p class="line40">
+                                                    例题1
+                                                </p>
+                                                <div class="">
+                                                    丽给小明出了一道计算题：若（-3）x•（-3）2 •（-3）3 =（-3）7，求x的值，小明的答案是-2，小亮的A : 2     B : 3 C : 4     D : 5
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    知识点一，三角函数的知识点一
+                                    <div class="mt20 mb20 pl15">
+                                        <div class="mb20">
+                                            1：三角函数的公式熟练<br>
+                                            2：三角函数的公式熟练<br>
+                                            3：三角函数的公式熟练
+                                        </div>
+                                        <p class="mt20 mb20">考法1：三角函数的公式熟练</p>
+                                        <div class="mb20 overflow">
+                                            <span class="sift-test "> 精选例题</span>
+                                            <div class="align-left mb20" >
+                                                <p class="line40">
+                                                    例题1
+                                                </p>
+                                                <div >
+                                                    丽给小明出了一道计算题：若（-3）x•（-3）2 •（-3）3 =（-3）7，求x的值，小明的答案是-2，小亮的A : 2     B : 3 C : 4     D : 5
+                                                </div>
+                                            </div>
+                                            <span class="sift-test "> 随堂练习</span>
+                                            <div class="align-left">
+                                                <p class="line40">
+                                                    练习1
+                                                </p>
+                                                <div>
+                                                    丽给小明出了一道计算题：若（-3）x•（-3）2 •（-3）3 =（-3）7，求x的值，小明的答案是-2，小亮的A : 2     B : 3 C : 4     D : 5
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="teach-content-box mb0 pb42">
+                            <h5 class="nav-head mb20"><i class="method-icon mr10"></i>方法总结</h5>
+                            <div class="font14 nav-box">
+                                此处填写老师自己的教学方法，或者是老师自己针对此次教学的总结信息，包括针对当前学生学习状态信息。此处填写老师自己的教学方
+                                法，或者是老师自己针对此次教学的总结信息，包括针对当前学生学习状态信息。
+                            </div>
+                        </li>
+                    </ul>
+                    <!--教学记录内容结束-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var el = document.getElementById("left-menu");
+        var org= document.getElementById("middle-org");
+        changeMenuHeight();
+        function changeMenuHeight(){
+            el.style.height = document.documentElement.clientHeight + 'px';
+            document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+            if (org) {
+                org.style.height = document.documentElement.clientHeight - 80 + 'px';
+            }
+        }
+    </script>
+    <script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+    <script src="../../../bundle/js/vendor.js"></script>
+    <script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

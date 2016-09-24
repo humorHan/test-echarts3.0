@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/add-student.css" rel="stylesheet">
+    <title>学生管理-添加学生</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="mt50 mb10 clearFix">
+                    <div class="btns font14 right">
+                        <span class="add-student handle-btn">添加学生</span>
+                        <span class="add-number font12">
+                            <span class="add-number-bg middle"></span>
+                            <span class="middle" style="line-height: 13px;">可添加老师账号<i class="red"> 99 </i>个</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="list-wrap h50">
+                    <select class="select light-black ml30">
+                        <option value="">全部学生</option>
+                    </select>
+                    <div class="search-total right">
+                        <div class="inline">
+                            <input type="text" class="search-text hidden" placeholder="请输入搜索内容"><span class="cursor mr7 search "><i class="search-img"></i></span>
+                            <div class="inline">共计<i class="red"> 30 </i>名咨询师</div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>账号</th>
+                            <th>
+                                <select class="select">
+                                    <option>激活状态</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select class="select">
+                                    <option>到期时间</option>
+                                </select>
+                            </th>
+                            <th>创建时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张晓东</td>
+                            <td>18888888888</td>
+                            <td>
+                                <span class="red">未激活</span>
+                            </td>
+                            <td>2016-10-1</td>
+                            <td>2016-08-01</td>
+                            <td>
+                                <span class="see-btn mr5 w68">分配学管</span>
+                                <span class="see-btn">查看</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>张晓东</td>
+                            <td>18888888888</td>
+                            <td>
+                                <span class="green">已激活</span>
+                            </td>
+                            <td>2016-10-1</td>
+                            <td>2016-08-01</td>
+                            <td>
+                                <span class="see-btn mr5 w68">修改学管</span>
+                                <span class="see-btn">查看</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--添加学生 start-->
+<div class="add-student popup hidden">
+    <h5 class="center font16 popuphead">
+        添加学生
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt20">
+        <div class="pop-content mlr40">
+            <div>
+                姓名：
+                <input class="input mb10 w221" type="text" placeholder="请输入学生姓名"/>
+                <div class="error-tip ml46 mb10">学生姓名不能为空!</div>
+            </div>
+            <div>
+                手机：
+                <input class="input mb10 w221" type="text" placeholder="请输入手机号码" />
+                <div class="error-tip ml46 mb10">手机号码已被占用!</div>
+            </div>
+            <div>
+                邮箱：
+                <input class="input mb10 w221" type="text" placeholder="请输入邮箱地址" />
+                <div class="error-tip ml46 mb10">邮箱不能为空</div>
+            </div>
+            <div class="mb10">
+                是否激活：
+                <label class="inline">
+                    <input class="middle" type="radio" name="isActive">
+                    立即激活
+                </label>
+                <label class="inline">
+                    <input class="middle" type="radio" name="isActive">暂不激活
+                </label>
+            </div>
+            <div class="mb10">选择批次</div>
+            <ul class="batches">
+                <li class="batch">
+                    <input class="middle mr5" type="checkbox" />
+                    <span>剩余<i class="red">100</i>个老师账号，剩余时间<i class="red">365</i>天</span>
+                </li>
+                <li class="batch">
+                    <input class="middle mr5" type="checkbox"/>
+                    <span>剩余<i class="red">10</i>个老师账号，剩余时间<i class="red">128</i>天</span>
+                </li>
+            </ul>
+            <div class="contact-me">
+                <div class="error-tip">您当前没有剩余的学生账号，请联系我们购买！</div>
+            </div>
+        </div>
+        <div class="handle font14 auto pb20">
+            <span class="submit">完成</span>
+        </div>
+    </div>
+</div>
+<!--添加学生 end-->
+<!--账号详情 start-->
+<div class="account-detail popup hidden">
+    <h5 class="center font16 popuphead">
+        账号详情
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt20">
+        <div class="pop-content mlr40">
+            <table class="account-detail-table">
+                <thead>
+                    <tr>
+                        <th>批次</th>
+                        <th>类别</th>
+                        <th>数量</th>
+                        <th>剩余时间</th>
+                        <th>购买时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>学生账号</td>
+                        <td>300个</td>
+                        <td>180天</td>
+                        <td>2016-08-10</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+        <div class="handle font14 auto mt20 pb20">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--账号详情 end-->
+<!--添加成功弹框 start-->
+<div class="add-success pop-up font14 hidden">
+    <span class="pop-close cursor"></span>
+    <div class="pop-content red center">
+        <div class="success-bg"></div>
+        <div class="mt10">添加成功</div>
+        <div class="mt20 align-left">恭喜您！成功创建并激活学生账号</div>
+        <div class="mt10 align-left">账号：19845896587</div>
+    </div>
+    <div class="handle">
+        <span class="ok">确定</span>
+    </div>
+</div>
+<!--添加成功弹框 end-->
+<!--分配学管 start-->
+<div class="allot-school-management popup">
+    <h5 class="center font16 popuphead">
+        分配学管
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30">
+        <div class="pop-content">
+            <ul class="school-management font12">
+                <li>
+                    <label>
+                        <input class="mr5 middle" type="radio" name="department-item">
+                        <span>张学管</span>
+                        <span>
+                            (<i class="red">36</i>名学生)
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input class="mr5 middle" type="radio" name="department-item">
+                        <span>张学管</span>
+                        <span>
+                            (<i class="red">36</i>名学生)
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="handle font14 auto mt20 pb20">
+            <span class="submit">确定</span>
+        </div>
+    </div>
+</div>
+<!--分配学管 end-->
+<script>
+    var el = document.getElementById("left-menu");
+    var org = document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight() {
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

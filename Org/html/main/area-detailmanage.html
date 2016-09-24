@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>区域管理-经理详情</title>
+    <link href="../../../bundle/css/common/base.css" type="text/css" rel="stylesheet" />
+    <link href="../../../bundle/css/common/color.css" type="text/css" rel="stylesheet">
+    <link href="../../../bundle/css/area-detailmanage.css" type="text/css" rel="stylesheet" >
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left classDetail">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item left active">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp|&nbsp</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <!--正文（main-content可修改宽度）-->
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="area-box">
+                    <p class="black font16">
+                        <span >区域管理</span> >
+                        <span > 大区经理</span>
+                    </p>
+                    <p class="overflow mb10 minus-mt5">
+                        <button class=" head-btn right cursor handle-btn delesch">删除校区</button>
+                        <button class=" head-btn right cursor mr10 handle-btn addsch">添加校区</button>
+                        <button class=" head-btn right cursor mr10 handle-btn">修改经理</button>
+                    </p>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="contentnews auto">
+                            <div class="center font16 title">
+                                <i class="normal">华北大区</i>
+                                <i class="edit cursor">
+                                    <img src="../../../bundle/img/edit.png" class="editimg">
+                                    <img src="../../../bundle/img/editok.png" class="hidden editok">
+                                </i>
+                            </div>
+                            <img src="../../../bundle/img/zhen.png" class="rimg">
+                            <div class="contentbox auto">
+                                <p class="center font16 headbg">区域经理：<span class="ml5">张三经理</span></p>
+                                <div class="pb30 pt30 teacherbox overflow">
+                                    <span class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span  class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span  class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span  class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span  class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span  class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                    <span  class="schname mb10"><i class="schlogo"></i>北京海淀校区</span>
+                                </div>
+                            </div>
+                            <!--   弹框样式开始  -->
+                            <!--   更换区域经理开始  -->
+                            <div class="shade hidden">
+                                <div class="change-manage popup">
+                                    <h5 class="center font16 popuphead">
+                                        更换区域经理<img src="../../../bundle/img/close.png" class="popclose cursor">
+                                    </h5>
+                                    <div class="popupbox center pt30">
+                                        <select class="select">
+                                            <option>张老师</option>
+                                            <option>张老师</option>
+                                            <option>张老师</option>
+                                            <option>张老师</option>
+                                        </select>
+                                        <div class="handle mb20 mt30">
+                                            <button class="submit">确定</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--   更换区域经理结束 -->
+                            <!--   添加校区开始 -->
+                            <!--<div class="shade">-->
+                            <div class="shade hidden">
+                                <div class="add-sch overflow">
+                                    <h5 class="center font16 popuphead">
+                                        添加校区<img src="../../../bundle/img/close.png" class="popclose cursor">
+                                    </h5>
+                                    <div class="popupbox clr">
+                                        <div class="sch-checkbox select font12" >
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                            <p class="mb10">
+                                                <input type="checkbox" class="mr20">海南校区<br>
+                                            </p>
+                                        </div>
+                                        <div class="handle mb20 mt20">
+                                            <button class="submit">确定</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--</div>-->
+                            <!--   添加校区结束 -->
+                            <!--   修改区域经理成功开始-->
+                            <div class="shade hidden">
+                                <div class="pop-up font14 ">
+                                    <span class="pop-close cursor"></span>
+                                    <div class="pop-content center">
+                                       <p class="line100">恭喜您，修改区域经理成功！</p>
+                                    </div>
+                                </div>
+                             </div>
+                            <!--   修改区域经理成功结束 -->
+                            <!--  添加校区成功开始 -->
+                            <!--  添加校区成功结束 -->
+                            <div class="pop-mask" >
+                                <div class="pop-up font14 ">
+                                    <span class="pop-close cursor"></span>
+                                    <div class="pop-content center">
+                                        <p class="line100">恭喜您，添加校区成功！</p>
+                                    </div>
+                                </div>
+                             </div>
+                            <!--   弹框样式结束  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

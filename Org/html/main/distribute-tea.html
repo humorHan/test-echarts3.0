@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>分配老师-班级-学管</title>
+    <link href="../../../bundle/css/common/base.css" type="text/css" rel="stylesheet" />
+    <link href="../../../bundle/css/distribute-tea.css" type="text/css" rel="stylesheet" >
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left head">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp|&nbsp</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <!--正文（main-content可修改宽度）-->
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="class-box">
+                    <div class="mb10 overflow">
+                        <span class="right mr10 font12 inline">
+                            <i class="i-icon"></i>
+                            还可以激活99个学生账号
+                        </span>
+                        <span class="head-btn right">批量续费</span><!--
+                       --><span class="head-btn right mr10">批量激活</span>
+                    </div>
+                    <!--标题开始-->
+                    <div class="line50 overflow headbg pl20 pr20">
+                        <select class="select">
+                           <option>全部学生</option>
+                        </select>
+                         <span class="right">
+                            共计<i class="red normal">66</i>名学生
+                        </span>
+                        <div class="search-total right">
+                            <div class="inline">
+                                <input type="text" class="search-text hidden" placeholder="请输入搜索内容"><span class="cursor mr7 search "><i class="search-img"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--标题结束-->
+                    <!--表格开始-->
+                    <table class="table font12 table-box">
+                        <thead class="font14">
+                            <tr>
+                                <th>
+                                    <input type="checkbox">
+                                    全选
+                                </th>
+                                <th>姓名</th>
+                                <th>账号</th>
+                                <th>
+                                   <select class="select">
+                                       <option>类型</option>
+                                   </select>
+                                </th>
+                                <th>
+                                    <select class="select">
+                                       <option>学段</option>
+                                    </select>
+                                </th>
+                                <th>学科</th>
+                                <th>老师/班级</th>
+                                <th>
+                                    <select class="select">
+                                        <option>激活状态</option>
+                                    </select>
+                                </th>
+                                <th>
+                                    <select class="select">
+                                        <option>到期时间</option>
+                                    </select>
+                                </th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font12 ">
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td class="red">未分配</td>
+                                <td class="red">未激活</td>
+                                <td>2016－08－06</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">分配</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">管理</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">管理</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox"></td>
+                                <td>张晓东</td>
+                                <td>19889988988</td>
+                                <td>暂无</td>
+                                <td>初中</td>
+                                <td>暂无</td>
+                                <td>张老师</td>
+                                <td class="green">已激活</td>
+                                <td>暂无</td>
+                                <td>
+                                    <span class="see-btn look  mr20">管理</span>
+                                    <span class="see-btn look ">查看</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--表格结束-->
+                    <!--管理弹框开始-->
+                    <div class=" manage-popup ">
+                        <div class="popup  overflow">
+                            <h5 class="center font16 popuphead">
+                                管理
+                                <i class="popclose cursor"></i>
+                            </h5>
+                            <div class="popupbox font12">
+                               <p class="font14 mb10">报班情况</p>
+                               <div class="class-detail">
+                                   <table class="table">
+                                       <thead >
+                                          <tr>
+                                              <th>类型</th>
+                                              <th>学段</th>
+                                              <th>学科</th>
+                                              <th>老师/班级</th>
+                                              <th>剩余课时</th>
+                                              <th>操作</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>老师老师老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>1对1</td>
+                                              <td>高中</td>
+                                              <td>数学</td>
+                                              <td>a老师</td>
+                                              <td>120</td>
+                                              <td>
+                                                  <i class="dustbin"></i>
+                                              </td>
+                                          </tr>
+                                       </tbody>
+                                   </table>
+                               </div>
+                                <p class="font14 mb10 mt10 cursor">
+                                    <span>添加</span> /
+                                    <span class="click-on">修改</span>
+                                </p>
+                                <div class="change-news-box mb10">
+                                    <div class="mb15"><span>类别：<i class="normal"></i>班科</span></div>
+                                    <!--    可添加部分开始-->
+                                   <!-- <div class="mb15">
+                                        <span>类别：</span>
+                                        <label class="mr10 cursor">
+                                            <input type="radio" class="mr5" name="type-choose"> 一对一
+                                        </label>
+                                        <label class="cursor">
+                                            <input type="radio"  class="mr5" name="type-choose"> 班课
+                                        </label>
+                                    </div>-->
+                                    <!--    可添加部分结束-->
+                                    <div class="mb15 overflow">
+                                        <span class="per45 left">学段：<i class="normal">初中</i></span>
+                                        <span class="per45 right">学科：<i class="normal">英语</i></span>
+                                        <!--    可添加部分开始-->
+                                      <!--  <div class="teacher per45 left">
+                                            <span>学段：</span>
+                                            <select class="selet-text">
+                                                <option>初中</option>
+                                            </select>
+                                        </div>
+                                        <div class="sign-up per45 right">
+                                            <span>学科：</span>
+                                            <select class="selet-text">
+                                                <option>数学</option>
+                                            </select>
+                                        </div>-->
+                                        <!--    可添加部分结束-->
+                                    </div>
+                                    <div class="mb15 overflow" >
+                                        <div class="teacher per45 left">
+                                            <span>老师：</span>
+                                            <select class="selet-teacher">
+                                                <option>李峰峰老师</option>
+                                            </select>
+                                        </div>
+                                        <div class="sign-up per45 right">
+                                            <span>签约：</span>
+                                            <input type="text" class="input-time">课时
+                                        </div>
+                                    </div>
+                                    <button class="ok-btn right">确定</button>
+                                </div>
+                                <span class="alert-error">请完善信息！</span>
+                                <div class="handle mt10">
+                                    <button class="submit">确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--管理弹框结束-->
+                    <!--账号续费/账号激活弹框开始-->
+                    <div class=" account-box hidden"  >
+                        <div class="popup account-active">
+                            <h5 class="center font16 popuphead">
+                                账号激活
+                                <i class="popclose cursor"></i>
+                            </h5>
+                            <div class="popupbox font12 overflow">
+                                <ul class="account-news">
+                                    <li>
+                                        学生：<span>李华（99999999）</span>
+                                        <i class="dele-icon"></i>
+                                    </li>
+                                    <li>
+                                        学生：<span>李华（99999999）</span>
+                                        <i class="dele-icon"></i>
+                                    </li>
+                                    <li>
+                                        学生：<span>李华（99999999）</span>
+                                        <i class="dele-icon"></i>
+                                    </li>
+                                    <li>
+                                        学生：<span>李华（99999999）</span>
+                                        <i class="dele-icon"></i>
+                                    </li>
+                                    <li>
+                                        学生：<span>李华（99999999）</span>
+                                        <i class="dele-icon"></i>
+                                    </li>
+                                    <li>
+                                        学生：<span>李华（99999999）</span>
+                                        <i class="dele-icon"></i>
+                                    </li>
+                                </ul>
+                                <p class="mt10 mb10">续费时间</p>
+                                <ul class="account-time">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>剩余<i class="red normal">100</i>个账号</span>
+                                            <span>剩余<i class="red normal">100</i>天</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>剩余<i class="red normal">100</i>个账号</span>
+                                            <span>剩余<i class="red normal">100</i>天</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>剩余<i class="red normal">100</i>个账号</span>
+                                            <span>剩余<i class="red normal">100</i>天</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>剩余<i class="red normal">100</i>个账号</span>
+                                            <span>剩余<i class="red normal">100</i>天</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span>剩余<i class="red normal">100</i>个账号</span>
+                                            <span>剩余<i class="red normal">100</i>天</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <span class="alert-error mt10 ">您创建的学生账号数量不足，请联系我们购买！</span>
+                    <!--            <span class="alert-error mt10">您当前已没有剩余的学生账号，请联系我们购买！</span>-->
+                                <div class="handle mt10">
+                                    <button class="submit">确定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--账号续费/账号激活弹框结束-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

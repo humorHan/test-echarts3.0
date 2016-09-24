@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/see-subject-evaluation.css" rel="stylesheet">
+    <title>查看学科测评报告</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="mt50 black">
+                    <span class="card-bg middle inline"></span>
+                    <span class="font16 ml5 middle inline">王兴同学的物理测评报告</span>
+                </div>
+                <div class="clearFix">
+                    <div class="right mb10">
+                        <div class="handle-btn">
+                            <span class="download middle"></span>
+                            <span class="font14">下载测评试卷</span>
+                        </div>
+                        <div class="handle-btn">
+                            <span class="download middle"></span>
+                            <span class="font14">下载测评报告</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="item-wrap">
+                    <div class="font16 mb10">一、测评内容</div>
+                    <div class="item">
+                        <div>
+                            <span>年级：九年级</span>
+                            <span class="ml150">科目：物理</span>
+                        </div>
+                        <div>知识点：声音的传播、传播及特性、声的利用、光的直线传播、光的反射和折射</div>
+                    </div>
+                </div>
+                <div class="light-line"></div>
+
+                <div class="item-wrap">
+                    <div class="font16 mb10">二、测评结果</div>
+                    <div class="item">
+                        <div class="bold">科目：初中物理</div>
+                        <div>您本科目此次测评成绩：<i class="red">B</i></div>
+                        <div class="center mb10">划分标准</div>
+                        <table class="report-table">
+                            <thead>
+                                <tr>
+                                    <th>考试分数段</th>
+                                    <th>90%（含）以上</th>
+                                    <th>80%（含）~90%</th>
+                                    <th>70%（含）~80%</th>
+                                    <th>60%（含）~70%</th>
+                                    <th>不足60%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>等级</td>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>C</td>
+                                    <td>D</td>
+                                    <td>E</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="light-line"></div>
+
+                <div class="item-wrap">
+                    <div class="font16 mb10">三、试卷分析</div>
+                    <div class="item">
+                        <div>①. 知识掌握度分析：</div>
+                        <div>说明：主要反映出学生对本次测评所考察的知识点的达标情况及达标率，并提供本次测评包括知识点的重要程度和所占的分值等相关信息。</div>
+                        <div id="knowledge-weight" style="height: 300px; width: 100%; margin: 20px 0;"></div>
+                        <table class="master-degree report-table">
+                            <thead>
+                                <tr>
+                                    <th>掌握程度</th>
+                                    <th>考点</th>
+                                    <th>重要程度</th>
+                                    <th>考点等级</th>
+                                    <th>考试大纲预估分值</th>
+                                    <th>总计</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">已掌握</td>
+                                    <td>字音</td>
+                                    <td>重点</td>
+                                    <td>必考</td>
+                                    <td>2分</td>
+                                    <td rowspan="2">15分</td>
+                                </tr>
+                                <tr>
+                                    <td>解释词义、字义</td>
+                                    <td>重点</td>
+                                    <td>易考</td>
+                                    <td>3分</td>
+                                </tr>
+                                <tr>
+                                    <td>部分掌握</td>
+                                    <td>字音</td>
+                                    <td>重点</td>
+                                    <td>必考</td>
+                                    <td>2分</td>
+                                    <td>15分</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div id="process_nowlage" class="mt20" style="width:100%;height:300px;"></div>
+                        <div class="light-line"></div>
+                    </div>
+
+                    <div class="item" style="margin-top: 30px;">
+                        <div>②. 试卷难度分析</div>
+                        <div class="mb30">说明：主要是分析组成试卷的试题的难度分布和数量分布，以及学生在每种难度试题上的答题正确率，从而反映学生对各难度题目的学习和掌握程度，为教师设计针对该学生提分的教学方案提供知识相关的重要参考依据。</div>
+                        <div class="clearFix">
+                            <table class="report-table left" style="width: 540px;">
+                                <thead>
+                                <tr>
+                                    <th>不同难度档</th>
+                                    <th>题目总数</th>
+                                    <th>回答正确数</th>
+                                    <th>您的正确率</th>
+                                    <th>您完成作答实际时间</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>偏易</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                    <td>3分</td>
+                                </tr>
+                                <tr>
+                                    <td>中档</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>50%</td>
+                                    <td>3分</td>
+                                </tr>
+                                <tr>
+                                    <td>偏难</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>50%</td>
+                                    <td>3分</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div id="difficulty-distribution" class="left" style="width: 500px;height: 195px;"></div>
+                        </div>
+                        <div id="diff-level" style="width:100%;height:330px;"></div>
+
+                    </div>
+                </div>
+                <div class="light-line"></div>
+
+                <div class="item-wrap">
+                    <div class="font16 mb20">四、推荐及建议</div>
+                    <div class="item">
+                        <table class="suggestion report-table">
+                            <thead>
+                                <tr>
+                                    <th class="w100">学科</th>
+                                    <th class="w100">教学目标</th>
+                                    <th class="w100">推荐课时</th>
+                                    <th class="w766">辅导策略</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>语文</td>
+                                    <td>E->A</td>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="w766">
+                                            第①阶段：首先以巩固基础知识和精讲基本题型为主，重点放到基本知识的理解上，再适当进行重
+                                            点题型的讲解；练习难度以较易为主。
+
+                                            第②阶段：以巩固重点难点和训练基本题型为主，重点放到重点题型的讲解和训练上，以变式练习
+                                            为主；练习难度以一般为主。
+
+                                            第③阶段：再以知识整合为主，突破疑难问题。重点放到重点题型的训练上，帮助其熟悉掌握重点
+                                            题型，并进行适当拓展和提升。练习难度以中等、较难为主。
+
+                                            第④阶段：最后不断加强对知识、思维方法维度的归纳总结，进而形成完善的知识结构。通过针对
+                                            性的思维方法训练，完善并补充思维方法，形成知识、思维方式、解题思想三维度知识结构。练习
+                                            难度以较难、困难为主。
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mt30 mb10">
+                            <span class="mr30">学校： 北京市朝阳区第101中学</span>
+                            <span class="mr30">电话： 138355497656</span>
+                            <span class="mr30">地址： 北京市朝阳区安立路368号</span>
+                        </div>
+                        <div>
+                            <span class="mr30">测评时间： 2015-08-01</span>
+                            <span>学校顾问： 某某顾问</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="light-line"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 请勾选要下载的测评报告项弹框 start-->
+<div class="download-report popup font14 hidden">
+    <h5 class="center font16 popuphead">
+        请勾选要下载的测评报告项
+        <img src="../../../bundle/img/close.png" class="popclose cursor">
+    </h5>
+    <div class="popupbox pt30">
+        <div class="pop-content mlr40 font12">
+            <ul class="reports">
+                <li>
+                    <input class="middle" type="checkbox" />
+                    <span class="ml5">高中语文</span>
+                </li>
+            </ul>
+        </div>
+        <div class="handle font14 auto mt20 pb20">
+            <span class="submit">下一步</span>
+        </div>
+    </div>
+</div>
+<!-- 请勾选要下载的测评报告项弹框 end-->
+<!--       测评设置弹框开始-->
+<div class="evaluation-box hidden">
+    <div class="popup ">
+        <h5 class="center font16 popuphead">
+            测评设置
+            <i class="popclose cursor"></i>
+        </h5>
+        <div class="popupbox overflow" >
+            <ul class="nav-box mt10">
+                <li class="nav-li" >
+                    <span class="nav-title ">
+                        <i class="nav-on">推荐课时</i>
+                    </span>
+                    <div class="nav-content font14 class-time overflow " >
+                        <div class="head">
+                           <span class="mr10 choose-item-on"></span>显示推荐课时模块
+                        </div>
+                        <p class="mt15">
+                            课时总数：84
+                        </p>
+                        <ul class="sub-box overflow mt15">
+                             <li class="mb15">
+                                 <i class="book-icon mr10"></i>小学奥数
+                             </li>
+                             <li class="pl80 mb15">
+                                 <span>原始课时：</span>
+                                 <div class="change-num-box">
+                                     <i class="subtraction">-</i>
+                                     <span class="red">42</span>
+                                     <i class="add">+</i>
+                                 </div>
+                             </li>
+                            <li class="pl80 mb15  overflow">
+                                <span class=" left">知识点：</span>
+                                <div class="left w284 font12 ">
+                                    <p class="line18">二次函数（10），三角函数（10），微分方程（12），
+                                        微分方程（12），微分方程（12）
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sub-box overflow mt20">
+                            <li class="mb15">
+                                <i class="book-icon mr10"></i>小学奥数
+                            </li>
+                            <li class="pl80 mb15">
+                                <span>原始课时：</span>
+                                <div class="change-num-box">
+                                    <i class="subtraction">-</i>
+                                    <span class="red">42</span>
+                                    <i class="add">+</i>
+                                </div>
+                            </li>
+                            <li class="pl80 mb15  overflow">
+                                <span class=" left">知识点：</span>
+                                <div class="left w284 font12 ">
+                                    <p class="line18">二次函数（10），三角函数（10），微分方程（12），
+                                        微分方程（12），微分方程（12）
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sub-box overflow mt20">
+                            <li class="mb15">
+                                <i class="book-icon mr10"></i>小学奥数
+                            </li>
+                            <li class="pl80 mb15">
+                                <span>原始课时：</span>
+                                <div class="change-num-box">
+                                    <i class="subtraction">-</i>
+                                    <span class="red">42</span>
+                                    <i class="add">+</i>
+                                </div>
+                            </li>
+                            <li class="pl80 mb15  overflow">
+                                <span class=" left">知识点：</span>
+                                <div class="left w284 font12 ">
+                                    <p class="line18">二次函数（10），三角函数（10），微分方程（12），
+                                        微分方程（12），微分方程（12）
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-li">
+                     <span class="nav-title">
+                        <i class="bt">目标正确率</i>
+                    </span>
+                    <div class="nav-content target-box font14  hidden">
+                        <div class="mb15 mt15">
+                            <i class="book-icon mr10"></i>小学奥数
+                        </div>
+                        <div class="line"></div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                  <th>难度档</th>
+                                  <th>容易</th>
+                                  <th>较易</th>
+                                  <th>中等</th>
+                                  <th>较难</th>
+                                  <th>困难</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                   <td>目标正确率(%)</td>
+                                   <td><input type="text" class="import"></td>
+                                   <td><input type="text" class="import"></td>
+                                   <td><input type="text" class="import"></td>
+                                   <td><input type="text" class="import"></td>
+                                   <td>90</td>
+                               </tr>
+                               <tr>
+                                   <td>学生正确率(%)</td>
+                                   <td>90</td>
+                                   <td>90</td>
+                                   <td>90</td>
+                                   <td>90</td>
+                                   <td>90</td>
+                               </tr>
+                            </tbody>
+                        </table>
+                        <div class="mb15 mt15">
+                            <i class="book-icon mr10"></i>初中物理
+                        </div>
+                        <div class="line"></div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>难度档</th>
+                                <th>容易</th>
+                                <th>较易</th>
+                                <th>中等</th>
+                                <th>较难</th>
+                                <th>困难</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>目标正确率(%)</td>
+                                <td><input type="text" class="import"></td>
+                                <td><input type="text" class="import"></td>
+                                <td><input type="text" class="import"></td>
+                                <td><input type="text" class="import"></td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>学生正确率(%)</td>
+                                <td>90</td>
+                                <td>90</td>
+                                <td>90</td>
+                                <td>90</td>
+                                <td>90</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="mb15 mt15">
+                            <i class="book-icon mr10"></i>小学奥数
+                        </div>
+                        <div class="line"></div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>难度档</th>
+                                <th>容易</th>
+                                <th>较易</th>
+                                <th>中等</th>
+                                <th>较难</th>
+                                <th>困难</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>目标正确率(%)</td>
+                                <td><input type="text" class="import"></td>
+                                <td><input type="text" class="import"></td>
+                                <td><input type="text" class="import"></td>
+                                <td><input type="text" class="import"></td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>学生正确率(%)</td>
+                                <td>90</td>
+                                <td>90</td>
+                                <td>90</td>
+                                <td>90</td>
+                                <td>90</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+               <li class="nav-li">
+                     <span class="nav-title">
+                        <i class="bt">辅导策略</i>
+                    </span>
+                    <ul class="nav-content tutoring-box  font14 hidden">
+                        <li>
+                            <div class="mb15 mt15">
+                                <i class="book-icon mr10"></i>小学奥数
+                            </div>
+                            <div class="sub-text">
+                                <p>
+                                    以巩固重点难点和训练基本题型为主，重点放到重点题型的讲解和训练 上，以变式练习为主；练习难度以一般为主。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mb15 mt15">
+                                <i class="book-icon mr10"></i>小学奥数
+                            </div>
+                            <div class="sub-text">
+                                <p>
+                                    以巩固重点难点和训练基本题型为主，重点放到重点题型的讲解和训练 上，以变式练习为主；练习难度以一般为主。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mb15 mt15">
+                                <i class="book-icon mr10"></i>小学奥数
+                            </div>
+                            <div class="sub-text">
+                                <p>
+                                    以巩固重点难点和训练基本题型为主，重点放到重点题型的讲解和训练 上，以变式练习为主；练习难度以一般为主。
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-li">
+                     <span class="nav-title">
+                        <i class="bt">报告页尾显示</i>
+                    </span>
+                    <div class="nav-content last-show font14 hidden">
+                       <ul class="mt40">
+                           <li class="mb35">
+                               <span class="mr10 choose-item-on"></span>
+                               <span class="mr10">学校</span>
+                               <input type="text" class="input-name" placeholder="请输入学校名称，可不写">
+                           </li>
+                           <li class="mb35">
+                               <span class="mr10 choose-item-on"></span>
+                               <span class="mr10">学校</span>
+                               <input type="text" class="input-name" placeholder="请输入地址，可不写">
+                           </li>
+                           <li>
+                               <span class="mr10 choose-item-on"></span>
+                               <span class="mr10">学校</span>
+                               <input type="text" class="input-name" placeholder="请输入电话，可不写">
+                           </li>
+                       </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="handle font14 auto mt30">
+                <span class="submit">下一步</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--       测评设置弹框结束-->
+<script>
+    var el = document.getElementById("left-menu");
+    var org = document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight() {
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+<script src="../../../bundle/js/see-subject-evaluation.js"></script>
+</body>
+</html>

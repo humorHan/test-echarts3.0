@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/see-subject-evaluation.css" rel="stylesheet">
+    <title>查看学科测评报告</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="mt50 black">
+                    <span class="card-bg middle inline"></span>
+                    <span class="font16 ml5 middle inline">王兴同学的物理测评报告</span>
+                </div>
+                <div class="clearFix">
+                    <div class="right mb10">
+                        <div class="handle-btn">
+                            <span class="download middle"></span>
+                            <span class="font14">下载</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="item-wrap">
+                    <div class="font16 mb10">一、测评内容</div>
+                    <div class="item">
+                        <div>
+                            类别：学习风格测试
+                        </div>
+                        <div>维度：时间偏好、认知偏好、交互环境、直觉感觉、任务处理、信息接受、信息处理、记忆风格、学习场景、背景声音</div>
+                    </div>
+                </div>
+                <div class="light-line"></div>
+
+                <div class="item-wrap">
+                    <div class="font16 mb10">二、测评结果</div>
+                    <div class="item">
+                        <ul>
+                            <li class="mb10">
+                                <p class="mb10">
+                                    ①. 综合描述
+                                </p>
+                                <div>
+                                    学习风格是一个人持续一贯的带有个性特征的学习方式，是学习策略和学习倾向的总和，它包括时间偏好、认知方式偏好、交互环境偏好、直觉感觉类型、任务
+                                    处理类型、信息接受类型、信息处理类型、记忆风格类型、学习场景类型、背景声音类型等十个方面。了解自己的学习风格倾向有助于发现自己最适合自己的个
+                                    性化学习方式，从而有意识的利用这些学习方式来提升自己的学习效率。通过《学习风格测试》，发现您的时间偏好为（清晨），认知方式偏好为（上午），交
+                                    互环境偏好为（视觉型），直觉感觉类型为（内向型），任务处理类型为（中间型），信息接受类型为（封闭型），信息处理类型为（细节型），记忆风格类型
+                                    为（综合型），学习场景类型为（尖锐型），背景声音类型为（场独立型）。风格没有好坏之分，只有不同的差异特点，请发扬自己的学习风格，找到最适合自
+                                    己的学习方式，以进一步提升学习效率，提高学习效果。如下图：
+                                </div>
+                            </li>
+                            <li  class="mb10">
+                             <!--  todo学能方面展示图-->
+                            </li>
+                            <li>
+                                <p class="mb10">
+                                    ②. 结果与展示
+                                </p>
+                                <table class="report-table center">
+                                    <thead>
+                                    <tr>
+                                        <th class="w166">非智力因素方面</th>
+                                        <th class="w900">测试结果</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="star middle"></span>
+                                                <span class="middle">时间偏好</span>
+                                            </td>
+                                            <td>
+                                                清晨型
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="star middle"></span>
+                                                <span class="middle">认知偏好</span>
+                                            </td>
+                                            <td>
+                                                视觉型：习惯通过视觉进行认知的学习者最好采取视觉认知的学习手段，例如：通过书籍、录像、图表、图画等媒体学习。
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="mt30">测评时间：2015-10-8 20:30:40</p>
+                            </li>
+                        </ul>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org = document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight() {
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>

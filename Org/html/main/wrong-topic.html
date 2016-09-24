@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link href="../../../bundle/css/common/base.css" rel="stylesheet">
+    <link href="../../../bundle/css/wrong-topic.css" rel="stylesheet">
+    <title>学生情况-教学监管-错题本</title>
+</head>
+<body onresize="changeMenuHeight()">
+<div id="left-menu" class="left">
+    <div class="person-center"></div>
+    <ul>
+        <li class="active">
+            <div class="teach-supervise active">教学监督</div>
+        </li>
+        <li>
+            <div class="student-manage">学生管理</div>
+        </li>
+        <li>
+            <div class="class-manage">班级管理</div>
+        </li>
+        <li>
+            <div class="org-manage">组织管理</div>
+        </li>
+        <li>
+            <div class="area-manage">区域管理</div>
+        </li>
+    </ul>
+    <div class="system-setting"></div>
+</div>
+<div id="right-wrapper">
+    <!--头部-->
+    <div id="top-head">
+        <img src="../../../bundle/img/logo.png" class="logo">
+        <div class="head-handle right font14">
+            <div class="home-switch inline middle">
+                <div class="switch-btn"></div>
+                <div class="home-item active left">教务</div>
+                <div class="home-item left">教学</div>
+            </div>
+            <div class="user-info inline middle">
+                早上好！李老师
+                <i>&nbsp;|&nbsp;</i>
+                <span class="exit">退出</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="middle-org">
+            <div class="org-icon-wrap font16">
+                <span class="org-icon inline middle"></span>
+                <span class="middle">江苏子轩教育机构</span>
+                <span class="org-icon-shadow inline"></span>
+            </div>
+            <ul class="org font16">
+                <li class="org-item active">
+                    <div class="org-item-content ">
+                        <span>学生情况</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+                <li class="org-item">
+                    <div class="org-item-content">
+                        <span>教学情况</span>
+                    </div>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content-org-wrapper">
+            <div id="main-content">
+                <div class="wrong-box">
+                    <p class="font16 black">
+                        李华的学习轨迹
+                    </p>
+                    <div class="overflow mb10 font16 minus-mt20">
+                        <div class=" right cursor ">
+                            <i class="analy-icon"></i>
+                            <span class="title-nav ">掌握分析</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="wrong-icon-on"></i>
+                            <span class="title-nav title-nav-on">错题本</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="homework-icon"></i>
+                            <span class="title-nav ">作业情况</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="knowledge-icon"></i>
+                            <span class="title-nav ">知识测评</span>
+                        </div>
+                        <div class=" right cursor mr10">
+                            <i class="teach-icon"></i>
+                            <span class="title-nav">教学记录</span>
+                        </div>
+                     </div>
+                    <!--标题开始-->
+                    <div class="line50 overflow headbg pl20 pr20">
+                        <div class="search-total right">
+                            <div class="inline">
+                                <input type="text" class="search-text hidden" placeholder="请输入搜索内容"><span class="cursor mr7 search "><i class="search-img"></i></span>
+                            </div>
+                        </div>
+                        <span class="right font16 mr7">知识点：</span>
+                        <div class="right mr30">
+                            <span class="left  font16 headcolor mr7">学科：</span>
+                            <select class="left subject-sele">
+                                <option>初中数学</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--标题结束-->
+                    <!--错题选择题内容开始-->
+                    <div class="wrong-content-box">
+                        <p class="font14">
+                            <span>第<i class="red">1</i>题</span>/
+                            <span>共<i class="red">8</i>题</span>
+                        </p>
+                        <div class="wrong-topic">
+                            蜗牛从某点O开始沿东西方向直线爬行，规定向东牌型的路程记作为正数，向西爬行的路程记作为负数，
+                            爬行的路程依次为（单位：cm）：+5，-3，+10，-8，-6，+12，-10，若蜗牛在爬行过程中，
+                            每爬行1cm，奖励一粒芝麻，则蜗牛一共得到了多少粒芝麻？
+                        </div>
+                        <div class="mb20 bold">
+                            正确答案：<span class="red">C</span> ，
+                            TA的答案：<span class="red">D</span>，
+                            回答：<span class="green">D</span>。
+                        </div>
+                        <div class="mb20">TA作答本题2次，回答错误2次，上次回答是：D</div>
+                        <div class="mb20 red bold"><b class="black">考点：</b>一元二次方程</div>
+                        <div class="mb20"><b>难度：</b> 容易</div>
+                        <div class="mb20"><b>解答：</b> C</div>
+                        <div class="mb20"><b>正确答案</b></div>
+                        <div class="mb20"><b>试题分析：</b>根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。</div>
+                        <div class="mb20"><b>解：</b>根据分析可知第三条线最直，所以第三条线最短。</div>
+                        <div><b>笔记：</b>根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。</div>
+                        <div class="change-topic">
+                            <span class="pre-topic left cursor">< 上一题</span>
+                            <span class="next-topic left cursor">下一题  ></span>
+                        </div>
+                    </div>
+                    <!--错题选择题内容结束-->
+                    <!--错题主观题内容结束-->
+                    <div class="wrong-content-box">
+                        <p class="font14">
+                            <span>第<i class="red">2</i>题</span>/
+                            <span>共<i class="red">8</i>题</span>
+                        </p>
+                        <div class="wrong-topic">
+                            已知p∈R，a＞b＞0比较下列各题中两个代数式值的大小：
+                            （1）（2p+1）（p-3）与（p-6）（p+3）+10；
+                            （2）（2p+1）（p-3）与（p-6）（p+3）+10；
+                        </div>
+                        <div class="mb20 bold red">
+                            <span class="black">TA的答案：</span>未回答
+                        </div>
+                        <div class="mb20">TA作答本题2次，回答错误2次，上次回答是：D</div>
+                        <div class="mb20 red bold"><b class="black">考点：</b>一元二次方程</div>
+                        <div class="mb20"><b>难度：</b> 容易</div>
+                        <div class="mb20"><b>解答：</b> C</div>
+                        <div class="mb20"><b>正确答案</b></div>
+                        <div class="mb20"><b>试题分析：</b>根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。</div>
+                        <div class="mb20"><b>试题解析：</b>根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。</div>
+                        <div class="mb20"><b>解：</b>根据分析可知第三条线最直，所以第三条线最短。</div>
+                        <div ><b>笔记：</b>根据最短路线的知识可知，两点间的线中直线是最短的，所以找出直的线即可。</div>
+                        <div class="change-topic">
+                            <span class="pre-topic left cursor">< 上一题</span>
+                            <span class="next-topic left cursor">下一题  ></span>
+                        </div>
+                     </div>
+                <!--错题主观题内容结束-->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var el = document.getElementById("left-menu");
+    var org= document.getElementById("middle-org");
+    changeMenuHeight();
+    function changeMenuHeight(){
+        el.style.height = document.documentElement.clientHeight + 'px';
+        document.getElementById("top-head").style.width = document.documentElement.clientWidth - 130 + 'px';
+        if (org) {
+            org.style.height = document.documentElement.clientHeight - 80 + 'px';
+        }
+    }
+</script>
+<script src="../../../bundle/js/jquery-2.2.0.min.js"></script>
+<script src="../../../bundle/js/vendor.js"></script>
+<script src="../../../bundle/js/common.js"></script>
+</body>
+</html>
